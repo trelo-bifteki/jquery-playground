@@ -4,6 +4,7 @@
   "description": "Jquery playground",
   "main": "index.js",
   "scripts": {
+    "serve": "webpack-dev-server --config webpack.dev.config.js",
     "eslint": "eslint src/**/*.js",
     "build": "webpack",
     "test": "jest"

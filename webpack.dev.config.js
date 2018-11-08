@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'jquery-playground.js',
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
