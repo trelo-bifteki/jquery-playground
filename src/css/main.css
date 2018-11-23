@@ -1,0 +1,9 @@
+.app {
+  display: none;
+  visibility: hidden;
+}
+
+.app--loaded {
+  display: block;
+  visibility: visible;
+}

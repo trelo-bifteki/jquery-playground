@@ -1,11 +1,12 @@
 import 'reset-css';
+import './css/main.css';
 import $ from 'jquery';
 
 console.info('Hey there'); // eslint-disable-line no-console
 
 $(() => {
   const appElement = $('#app');
-  appElement.addStyle('visibility', 'normal');
+  appElement.addClass('app--loaded');
   console.info('document loaded'); // eslint-disable-line no-console
 });
 
