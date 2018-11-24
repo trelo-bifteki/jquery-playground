@@ -1,5 +1,5 @@
 import 'reset-css';
-import './css/main.css';
+import './css/index.scss';
 import $ from 'jquery';
 
 console.info('Hey there'); // eslint-disable-line no-console
