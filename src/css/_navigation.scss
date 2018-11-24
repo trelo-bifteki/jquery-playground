@@ -1,0 +1,39 @@
+.navigation {
+  background-color: $color-blue;
+  border-radius: 5px;
+  padding: $space $space-xl;
+
+
+  &__item {
+    color: #DFDFDF;
+    text-decoration: none;
+    margin-right: $space-l;
+  }
+
+  &__item:hover {
+    color: $color-white;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  @include media-breakpoint-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navigation__icon {
+    background: url('../assets/iconmenu.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    min-width: 30px;
+    max-height: auto;
+  }
+
+  .navigation__item {
+    display: none;
+  }
+}

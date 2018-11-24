@@ -1,46 +1,44 @@
 .jumbotron {
-  background: #2a2a2a;
-  color: #FFF;
-}
+  background: $color-gray-darkest;
+  color: $color-white;
 
-.jumbotron__container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 
-.jumbotron__description {
-  width: 50%;
-}
-
-.jumbotron__image-container {
-  width: 50%;
-}
-
-.jumbotron__image {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.jumbotron__title {
-  font-size: 200%;
-}
-
-.jumbotron__summary {
-  margin: 1rem 0;
-}
-
-@media only screen and (max-width: 360px) {
-  .jumbotron__container {
-    flex-direction: column;
+    @include media-breakpoint-small {
+      flex-direction: column;
+    }
   }
 
-  .jumbotron__description {
-    width: auto;
+  &__description {
+    margin: $space-l 0;
+    width: 50%;
+
+    @include media-breakpoint-small {
+      width: auto;
+    }
   }
 
-  .jumbotron__image-container {
-    width: auto;
+  &__image-container {
+    width: 50%;
+
+    @include media-breakpoint-small {
+      width: auto;
+    }
   }
 
+  &__image {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  &__title {
+    font-size: 200%;
+  }
+
+  &__summary {
+    margin: $space 0;
+  }
 }

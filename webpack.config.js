@@ -32,6 +32,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: '[path][name].[hash].[ext]',
+        },
+      },
+      {
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },
@@ -46,6 +54,15 @@ module.exports = {
           'sass-loader', // compiles Sass to CSS, using Node Sass by default
         ],
       },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            // attrs: [':data-src'],
+          },
+        },
+      },
     ],
   },
   devServer: {
@@ -55,7 +72,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './src/index.html',
+      inject: 'body',
     }),
   ],
 };
