@@ -1,0 +1,29 @@
+.articles {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  &__main {
+    flex: 1 1 66%;
+    padding-right: 1rem;
+  }
+
+  &__sidebar {
+    flex: 1 1 33%;
+  }
+
+  @include media-breakpoint-small {
+    flex-direction: column;
+
+    &__main {
+      flex: 0 0 auto;
+      padding-right: 0;
+    }
+
+    &__sidebar {
+      flex: 0 0 auto;
+      margin-top: 1rem;
+    }
+  }
+}

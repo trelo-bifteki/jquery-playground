@@ -1,0 +1,15 @@
+$color-background: #EEE;
+$color-white: #FFF;
+
+$breakpoint-small: 576px; // landscape phones
+$breakpoint-medium: 768px; // medium devices
+$breakpoint-large: 992px; // tables;
+$breakpoint-extra-large: 1200px; // desktops
+
+$space: 1rem;
+
+@mixin media-breakpoint-small {
+  @media only screen and (max-width: $breakpoint-small) {
+      @content;
+  }
+}

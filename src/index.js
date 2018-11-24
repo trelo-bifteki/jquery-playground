@@ -9,5 +9,3 @@ $(() => {
   appElement.addClass('app--loaded');
   console.info('document loaded'); // eslint-disable-line no-console
 });
-
-export default (one, another) => one + another;

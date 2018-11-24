@@ -1,3 +1,11 @@
-# Simple jquery playground
+# Untitled corp demo page
 
-This is a simple playground
+## About
+
+This is a playground for creating demo pages. It includes the following
+technologies:
+
+* webpack
+* Sass
+* Babel
+

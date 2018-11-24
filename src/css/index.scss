@@ -1,3 +1,26 @@
+@import "variables";
+
+@import "article";
+@import "articles";
+@import "header";
+@import "jumbotron";
+
+body {
+  background-color: $color-background;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.flex-container {
+  margin: 0 auto;
+  max-width: $breakpoint-extra-large + 2 * 15px;
+  padding: 0 15px;
+}
+
 .app {
   opacity: 0;
   transition: opacity 0.33s ease-in-out;
