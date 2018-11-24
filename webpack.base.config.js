@@ -5,7 +5,6 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'jquery-playground.js',
   },
   mode: 'development',
   module: {
@@ -25,7 +24,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[path][name].[hash].[ext]',
+          name: 'assets/[name].[hash].[ext]',
         },
       },
       {
