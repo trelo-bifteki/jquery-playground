@@ -4,9 +4,11 @@ pipeline {
       image 'node:10-alpine'
     }
   }
+
   environment {
-    HOME = '.'
+    CI = 'true'
   }
+
   stages {
     stage('prepare') {
       steps {
