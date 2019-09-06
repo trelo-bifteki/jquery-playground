@@ -4,9 +4,9 @@
   "description": "Jquery playground",
   "main": "index.js",
   "scripts": {
-    "serve": "npx webpack-dev-server --config webpack.base.config.js",
+    "serve": "webpack-dev-server --config webpack.base.config.js",
     "eslint": "eslint src/**/*.js",
-    "build": "npx webpack --config webpack.production.config.js",
+    "build": "webpack --config webpack.production.config.js",
     "test": "jest"
   },
   "repository": {
