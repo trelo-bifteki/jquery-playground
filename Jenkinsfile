@@ -6,7 +6,7 @@ pipeline {
   }
 
   environment {
-    CI = 'true'
+    HOME = '.'
   }
 
   stages {
@@ -20,6 +20,6 @@ pipeline {
       steps {
         sh 'npm run build'
       }
-    }    
+    }
   }
 }
