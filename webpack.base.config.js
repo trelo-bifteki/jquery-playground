@@ -43,13 +43,16 @@ module.exports = {
         ],
       },
       {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            // attrs: [':data-src'],
+        test: /\.html$/,
+        use: [
+          'htmllint-loader',
+          {
+            loader: 'html-loader',
+            options: {
+              // attrs: [':data-src'],
+            },
           },
-        },
+        ],
       },
     ],
   },
