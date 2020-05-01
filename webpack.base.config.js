@@ -56,6 +56,17 @@ module.exports = {
       },
     ],
   },
+  performance: {
+    hints: 'warning', // enum
+    maxAssetSize: 200000, // int (in bytes),
+    maxEntrypointSize: 400000, // int (in bytes)
+    assetFilter(assetFilename) {
+      // Function predicate that provides asset filenames
+      return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
+    },
+  },
+  devtool: 'source-map',
+  target: 'web',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
